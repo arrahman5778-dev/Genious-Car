@@ -2,6 +2,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import Sociallogin from '../Sociallogin/Sociallogin';
 
 const Login = () => {
   //  Email & password Ref
@@ -44,6 +45,7 @@ const Login = () => {
         </Button>
       </Form>
       <p className='mt-2'> New To Genious Car? <Link to="/signup" className=' text-primary    pe-auto ' onClick={navigateRegister}>Please Register</Link> </p>
+      <Sociallogin></Sociallogin>
     </div>
   );
 };
